@@ -1,0 +1,126 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 650px;
+  text-align: center;
+}
+
+.shared {
+  margin-bottom: 4rem;
+  color: #666666;
+  font-size: 1.5em;
+}
+
+.strong {
+  color: #000000;
+  font-weight: 600;
+}
+
+.title {
+  margin: 4rem 0 2rem 0;
+  line-height: 1;
+  font-size: 3.375em;
+  font-weight: 800;
+  animation-duration: 0.2s;
+  animation-name: list-appear;
+  animation-timing-function: ease;
+}
+
+.body {
+  margin: 0 0 2rem 0;
+  font-size: 1.5em;
+  animation-duration: 0.2s;
+  animation-name: list-appear;
+  animation-timing-function: ease;
+}
+
+/* TODO: Optically center icon in button */
+.open {
+  --size: 5.0625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--size);
+  height: var(--size);
+  background: #000000;
+  border-radius: calc(var(--size) / 2);
+  color: #ffffff;
+  font-size: 2.25rem;
+  cursor: pointer;
+  animation-duration: 0.3s;
+  animation-name: list-appear;
+  animation-timing-function: ease;
+}
+
+@keyframes list-appear {
+  0% {transform: scale(0.75); opacity: 0;}
+  100% {transform: scale(1); opacity: 1;}
+}
+
+.showContainer {
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  width: 100%;
+  max-width: 650px;
+  text-shadow: var(--shadow);
+  filter: drop-shadow(var(--shadow));
+}
+
+.close {
+  margin-bottom: auto;
+  color: #ffffff;
+  font-size: 3.375rem;
+  cursor: pointer;
+  animation-duration: 0.4s;
+  animation-name: close-appear;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes close-appear {
+  0% {transform: scale(0.75); opacity: 0;}
+  100% {transform: scale(1); opacity: 1;}
+}
+
+.showTitle {
+  margin: 0 0 1rem 0;
+  line-height: 1;
+  color: #ffffff;
+  font-size: 5.0625em;
+  font-weight: 700;
+  text-align: left;
+  opacity: 0;
+  animation-duration: 0.9s;
+  animation-delay: 0.1s;
+  animation-name: details-appear;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 1rem;
+  color: #ffffff;
+  font-size: 1.5em;
+  opacity: 0;
+  animation-duration: 0.6s;
+  animation-delay: 0.3s;
+  animation-name: details-appear;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes details-appear {
+  0% {transform: translate3d(0, 20%, 0); opacity: 0;}
+  30% {transform: translate3d(0, -10%, 0); opacity: 1;}
+  60% {transform: translate3d(0, 3%, 0);}
+  100% {transform: translate3d(0, 0, 0); opacity: 1;}
+}
