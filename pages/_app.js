@@ -4,7 +4,7 @@ import MorphTransition from "nextjs-morph-page";
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <MorphTransition>
+      <MorphTransition timeout={0} classNames="morph">
         <Component {...pageProps} />
       </MorphTransition>
     </>

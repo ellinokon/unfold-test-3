@@ -21,3 +21,12 @@ a {
 * {
   box-sizing: border-box;
 }
+
+img {
+  display: none;
+}
+
+
+img[src] {
+ display: block;
+}
