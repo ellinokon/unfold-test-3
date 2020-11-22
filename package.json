@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "next": "9.5.5",
+    "nextjs-morph-page": "^2.0.3",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-icons": "^3.11.0"
