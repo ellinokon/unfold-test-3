@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  max-width: 650px;
+  max-width: 550px;
   text-align: center;
 }
 
@@ -68,7 +68,7 @@
   align-items: flex-start;
   justify-content: flex-end;
   width: 100%;
-  max-width: 650px;
+  max-width: 550px;
   text-shadow: var(--shadow);
   filter: drop-shadow(var(--shadow));
 }
